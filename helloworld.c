@@ -65,11 +65,13 @@ int main(int argc, char *argv[]) {
     }
   
     if ((s = erl_find_symbol("main"))) {
-      printf("main foun\n");
+      printf("main found \n", 1, 2, 3, 4);
       ((func_t) s->address)();
     }
 
-    SleepThread();
+    for (int i = 0; i < 10; i++) {
+      sleep(2);
+    }
  
     return 0;
 }

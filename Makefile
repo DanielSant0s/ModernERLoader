@@ -8,7 +8,7 @@
 
 EE_BIN = helloworld.elf
 EE_OBJS = helloworld.o erl.o hashtab.o lookupa.o recycle.o
-EE_LIBS = -ldebug -lc
+EE_LIBS = -ldebug -lkernel -lc
 
 all: $(EE_BIN)
 
